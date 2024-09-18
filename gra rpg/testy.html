@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testy</title>
+    <style>
+      .hidden {
+          display: none;
+      }
+
+      .button-list {
+            display: none;
+            margin-top: 10px;
+        }
+
+        button:disabled {
+            background-color: gray;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- <div>
+      <button class="btn" onclick="toggleButton(this)">Przycisk 1</button>
+      <button class="btn" onclick="toggleButton(this)">Przycisk 2</button>
+      <button class="btn" onclick="toggleButton(this)">Przycisk 3</button>
+      <button class="btn" onclick="toggleButton(this)">Przycisk 4</button>
+      <button class="btn" onclick="toggleButton(this)">Przycisk 5</button>
+      <button class="btn" onclick="toggleButton(this)">Przycisk 6</button>
+    </div> -->
+
+    <!-- <button id="mainButton">Pokaż/Ukryj listę</button>
+    <div id="buttonList" class="button-list">
+      <button class="newButton">Przycisk 1</button>
+      <button class="newButton">Przycisk 2</button>
+      <button class="newButton">Przycisk 3</button>
+    </div> -->
+
+    <!-- funcja blokowania przycisku -->
+    <!-- <div class="test-class"></div> -->
+    <!-- <button id="firstButton">Przycisk 1 (blokuje)</button>
+    <button id="secondButton">Przycisk 2 (odblokowuje)</button> -->
+
+    <button id="startButton">Wybierz Akcję</button>
+
+    <div id="actionButtons" style="display: none;">
+      <button onclick="attack('fire')">Ognisty Atak</button>
+      <button onclick="attack('ice')">Lodowy Atak</button>
+      <button onclick="attack('lightning')">Atak Piorunem</button>
+    </div>
+
+    <div id="monster" data-hp="100">Potwór (HP: <span id="hp">100</span>)</div>
+
+    <script type="module" src="testy.js"></script>
+    <script type="module" src="data/skills-magic.js"></script>
+  </body>
+</html>
